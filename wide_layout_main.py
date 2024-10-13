@@ -39,7 +39,9 @@ hide_streamlit_style = """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # Page title
-st.image("https://i.gifer.com/3OqCo.gif", use_column_width="always", caption="INSPO™")
+left_co, cent_co,last_co = st.columns(3)
+with cent_co:
+    st.image("https://i.gifer.com/3OqCo.gif", use_column_width="always", caption="INSPO™")
 st.title("Hello!")
 st.write("Today is a good day to work!")
 st.caption("INSPO AI Chatbot | Model: gemini-1.5-flash")
